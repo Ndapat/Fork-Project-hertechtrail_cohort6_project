@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: #4a95cc;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -90,7 +90,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #FF0077;
+	color: #4a95cc;
 	outline: 0;
 }
 
@@ -271,48 +271,31 @@ hr {
  * Lists - (_document-setup.scss)  
  * -------------------------------------------------------------------
  */
-ol {
-	list-style: decimal;
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
 }
-ul {
-	list-style: disc;
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
-li {
-	display: list-item;
+span{
+	color: #4a95cc;
 }
-ol, ul {
-	margin-left: 1.7rem;
-}
-ul li {
-	padding-left: .4rem;
-}
-ul ul, ul ol, ol ol, ol ul {
-	margin: .6rem 0 .6rem 1.7rem;
-}
-ul.disc li {
-	display: list-item;
-	list-style: none;
-	padding: 0 0 0 .8rem;
-	position: relative;
-}
-ul.disc li::before {
-	content: "";
+nav ul li{
+	list-style-type: none;
 	display: inline-block;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: #FF0077;
-	position: absolute;
-	left: -17px;
-	top: 11px;
-	vertical-align: middle;
+	padding: 10px 30px;
 }
-dt {
-	margin: 0;
-	color: #FF0077;
-}
-dd {
-	margin: 0 0 0 2rem;
+nav ul li a{
+	color: #bebebe;
+	text-decoration: underline;
 }
 
 /**
@@ -429,7 +412,7 @@ img.pull-left {
 	display: none;
 }
 .pace .pace-progress {
-	background: #FF0077;
+	background:deepskyblue
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -870,7 +853,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	font-size: 8rem;
 	font-family: Arial, Sans-Serif;
-	color: #333;
+	color: #252525;
 }
 .pull-quote:before {
 	content: "\201C";
@@ -1119,7 +1102,7 @@ header .logo a {
 	color: transparent;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	
 	background-size: 92px 15px;
 }
 
@@ -1294,7 +1277,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #32c97d url(../images/download\ \(1\).jfif) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1363,7 +1346,7 @@ header .logo a {
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(29, 23, 23);
 }
 .intro-content .intro-position span:first-child::before {
 	content: "|";
@@ -1374,7 +1357,7 @@ header .logo a {
 }
 .intro-content .button {
 	color: #FFFFFF !important;
-	border-color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(255, 255, 255, 0.726);
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
@@ -2060,7 +2043,7 @@ header .logo a {
 	display: block;
 	height: 3px;
 	width: 80px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(2, 2, 2, 0.295);
 	position: absolute;
 	left: 50%;
 	bottom: 0;

@@ -290,11 +290,6 @@ nav.fixed-top {
   }
 }
 
-.navbar-collapse.show {
-  background: rgba(0, 0, 0, 0.4);
-  transition: .2s;
-}
-
 .mobile-logo {
   display: none;
 }
