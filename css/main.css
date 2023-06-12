@@ -38,7 +38,8 @@
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
-
+@import url(font-family: 'Dancing Script', cursive;
+font-family: 'Inter', sans-serif;);
 
 /** 
  * ===================================================================
@@ -275,7 +276,7 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 45px;
+	padding-top: 5px;
 	padding-left: 8%;
 	padding-right: 8%;
 }
@@ -455,7 +456,7 @@ img.pull-left {
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #FF0077;
+	border-left: 11px solid #0051ff;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -577,8 +578,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
-	border-bottom: 1px solid #FF0077;
+	color: #4a95cc;
+	border-bottom: 1px solid #002fff;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -719,8 +720,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #FF0077;
-	color: #FF0077;
+	border: 3px solid #0011ff;
+	color: #002fff;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -908,7 +909,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #FF0077;
+	color: #003cff;
 }
 .stats-tabs li a em {
 	display: block;
@@ -1023,8 +1024,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
-.section-intro h5 {
-	color: #FF0077;
+.section-intro h3 {
+	color: #331e58;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1048,7 +1049,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	.section-intro h1 {
 		font-size: 2.6rem;
 	}
-	.section-intro h5 {
+	.section-intro h3 {
 		font-size: 1.5rem;
 		letter-spacing: .3rem;
 	}
@@ -1087,9 +1088,9 @@ header .top-bar {
 }
 header .logo {
 	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
+	margin-left: 2px;
+	margin-right: 5px;
+	margin-top: 2px;
 	position: relative;
 }
 header .logo a {
@@ -1212,7 +1213,7 @@ header .logo a {
 
 /* dropdown nav */
 .main-navigation {
-	background: #000000;
+	background: rgba(255, 255, 255, 0.3);
 	padding: 24px 30px 42px;
 	margin: 0;
 	width: 100%;
@@ -1277,7 +1278,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #32c97d url(../images/download\ \(1\).jfif) no-repeat center bottom;
+	background: gray url(../images/portfolio/modals/red.jfif) no-repeat  center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1293,10 +1294,9 @@ header .logo a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	widt: 100%;
 	height: 100%;
-	background: #111111;
-	opacity: .85;
+	background: rgba(200, 200, 200, 0.1);
 }
 
 .intro-content {
@@ -1308,9 +1308,9 @@ header .logo a {
 	transform: translateY(-2.1rem);
 }
 .intro-content h1 {
-	color: #FFFFFF;
+	color:whitesmoke;
 	font-family: "poppins-medium", sans-serif;
-	font-size: 8.4rem;
+	font-size: 10rem;
 	line-height: 1.071;
 	max-width: 900px;
 	margin-top: 0;
@@ -1318,17 +1318,53 @@ header .logo a {
 	margin-left: auto;
 	margin-right: auto;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	border-right: solid 3px ;
+	white-space: nowrap;
+	animation: animated-text 4s steps(35,end) 1s 1 normal both,
+	animated-cursor 600ms steps(29,end) infinite;
+	animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-.intro-content h5 {
-	color: #cc005f;
+@keyframes animated-text{
+	from{width: 0;}
+	to{width: 472px;}
+}
+@keyframes animated-cursor{
+	from{border-right-color: navajowhite;}
+	to{border-right-color: transparent;}
+}
+.intro-content h3 {
+	color: #4a95cc;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 2.3rem;
+	font-size: 3rem;
 	line-height: 1.565;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
+/*.intro-content h1{
+	border-right: solid 3px rgba(0, 255, 0, .75);
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 28px;
+	color:rgba(255, 255, 255, .70)
+}
+/* animated text*/
+/*h1{
+	animation: animated-text 4s steps(35,end) 1s 1 normal both,
+	animated-cursor 600ms steps(29,end) infinite;
+	animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes animated-text{
+	from{width: 0;}
+	to{width: 472px;}
+}
+@keyframes animated-cursor{
+	from{border-right-color: rgba(0,255,0,.75);}
+	to{border-right-color: transparent;}
+}*/
 .intro-content .intro-position {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
@@ -1367,7 +1403,7 @@ header .logo a {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #4a95cc;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1399,7 +1435,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #4a95cc;
 }
 
 /**
@@ -1425,7 +1461,7 @@ header .logo a {
 	.intro-content h1 {
 		font-size: 5.2rem;
 	}
-	.intro-content h5 {
+	.intro-content h3 {
 		font-size: 1.8rem;
 	}
 	.intro-content .intro-position {
@@ -1446,8 +1482,8 @@ header .logo a {
 		font-size: 4.6rem;
 		margin-bottom: .6rem;
 	}
-	.intro-content h5 {
-		font-size: 1.5rem;
+	.intro-content h3 {
+		font-size: 2rem;
 		margin-bottom: .3rem;
 		letter-spacing: .2rem;
 	}
@@ -1473,7 +1509,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: #FFFFFF;
+	background: lightgrey;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
@@ -1489,9 +1525,10 @@ header .logo a {
 .intro-info img {
 	height: 9rem;
 	width: 9rem;
-	border-radius: 50%;
+	border-radius: 10%;
 	margin: .9rem 0 0 0;
 	float: left;
+	opacity: 1;
 }
 .intro-info .lead {
 	text-align: left;
@@ -1599,181 +1636,12 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-}
-
-#resume .resume-header {
-	text-align: center;
-}
-#resume .resume-header h2 {
-	color: #FF0077;
-}
-
-#resume .resume-timeline {
-	max-width: 980px;
-}
-#resume .timeline-wrap {
-	position: relative;
-	margin-top: 1.5rem;
-	margin-bottom: 6rem;
-}
-#resume .timeline-wrap::before {
-	content: "";
-	display: block;
-	width: 1px;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.1);
-	position: absolute;
-	left: 35%;
-	top: 0;
-}
-#resume .timeline-block {
-	position: relative;
-	padding-top: 1.5rem;
-}
-#resume .timeline-ico {
-	height: 4.8rem;
-	width: 4.8rem;
-	line-height: 4.8rem;
-	background: #313131;
-	border-radius: 50%;
-	text-align: center;
-	color: #FFFFFF;
-	position: absolute;
-	left: 35%;
-	top: .9rem;
-	margin-left: -2.4rem;
-}
-#resume .timeline-ico i {
-	position: relative;
-	left: .05rem;
-	top: .2rem;
-}
-
-#resume .timeline-header {
-	float: left;
-	width: 35%;
-	padding-right: 90px;
-	text-align: right;
-}
-#resume .timeline-header h3 {
-	margin-bottom: 0;
-}
-#resume .timeline-header p {
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
-	color: #888888;
-}
-#resume .timeline-content {
-	margin-left: 35%;
-	padding-left: 60px;
-}
-#resume .timeline-content h4 {
-	position: relative;
-	padding-bottom: 1.8rem;
-}
-#resume .timeline-content h4::after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 50px;
-	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-
-/**
- * responsive:
- * resume
- * ------------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	#resume .timeline-header {
-		padding-right: 50px;
-	}
-	#resume .timeline-header h3 {
-		font-size: 1.8rem;
-	}
-	#resume .timeline-header p {
-		font-size: 1.4rem;
-	}
-	#resume .timeline-content {
-		padding-left: 50px;
-	}
-}
-@media only screen and (max-width:768px) {
-	#resume .timeline-wrap::before {
-		left: 2.4rem;
-	}
-	#resume .timeline-ico {
-		left: 2.4rem;
-	}
-	#resume .timeline-header {
-		float: none;
-		width: auto;
-		padding-right: 15px;
-		text-align: left;
-	}
-	#resume .timeline-header h3 {
-		font-size: 2rem;
-	}
-	#resume .timeline-header p {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-	#resume .timeline-content {
-		margin: 0;
-	}
-	#resume .timeline-content h4 {
-		padding-bottom: 0;
-		padding-top: 2.1rem;
-		margin-bottom: .6rem;
-		font-size: 1.7rem;
-	}
-	#resume .timeline-content h4::after {
-		bottom: auto;
-		top: 0;
-	}
-	#resume .timeline-header, #resume .timeline-content {
-		padding-left: 7rem;
-	}
-}
-@media only screen and (max-width:480px) {
-	#resume .resume-header h2 {
-		font-size: 2.2rem;
-	}
-	#resume .timeline-wrap::before {
-		left: 1.8rem;
-	}
-	#resume .timeline-ico {
-		height: 3.6rem;
-		width: 3.6rem;
-		line-height: 3.6rem;
-		left: 1.8rem;
-		margin-left: -1.8rem;
-		font-size: 1.5rem;
-	}
-	#resume .timeline-header, #resume .timeline-content {
-		padding-left: 5.5rem;
-	}
-}
-
-
-/** 
- * ===================================================================
  * 13. portfolio - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	background: #FFFFFF;
+	background: lightgrey;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -1839,7 +1707,7 @@ header .logo a {
 	color: rgba(255, 255, 255, 0.6);
 }
 #portfolio .folio-item:hover .overlay {
-	background: rgba(0, 0, 0, 0.8);
+	background: #4a95cc;
 }
 #portfolio .folio-item:hover .folio-item-cell {
 	left: 0;
@@ -1939,7 +1807,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: ;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -2105,7 +1973,7 @@ header .logo a {
 	color: white;
 }
 #services .section-intro h5 {
-	color: #FF0077;
+	color: #003cff;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2127,7 +1995,7 @@ header .logo a {
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #FF0077;
+	color: #0026ff;
 }
 .services-list h3 {
 	color: #FFFFFF;
@@ -2241,7 +2109,7 @@ header .logo a {
 	color: white;
 }
 #contact .section-intro h5 {
-	color: #FF0077;
+	color: #0059ff;
 }
 #contact .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2294,7 +2162,7 @@ header .logo a {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #FF0077;
+	background: #003cff;
 }
 #contact form .form-field label::after {
 	position: absolute;
@@ -2303,7 +2171,7 @@ header .logo a {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #FF0077;
+	border-right: 5px solid #0400ff;
 	content: "";
 }
 #contact input[type="text"],
@@ -2325,7 +2193,7 @@ header .logo a {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #FF0077;
+	border-color: #0059ff;
 	color: #FFFFFF;
 }
 #contact textarea {
@@ -2333,7 +2201,7 @@ header .logo a {
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #FF0077;
+	border-color: #001aff;
 	color: #FFFFFF;
 }
 #contact button.submitform {
@@ -2345,11 +2213,11 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background: #006eff;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #4a95cc;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2363,7 +2231,7 @@ header .logo a {
 	color: #fa0003;
 }
 #message-success {
-	color: #FF0077;
+	color: #0051ff;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2408,7 +2276,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .contact-info h5 {
-	color: #FF0077;
+	color: #0044ff;
 }
 
 /**
@@ -2474,7 +2342,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
 }
@@ -2561,7 +2429,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #4a95cc;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
