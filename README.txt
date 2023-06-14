@@ -126,5 +126,11 @@ Javascript Files:
 
 
 Thanks for downloading from Styleshout :)
+
   
+some changes made in the html file. personal details were added to further personal the portfolio template to mine.
+
+CSS file was modified to some background images,colors and text colors.
+
+The JavaScript remains the same.
 
