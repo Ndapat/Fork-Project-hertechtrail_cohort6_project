@@ -1323,7 +1323,7 @@ header .logo a {
 	animation: animated-text 4s steps(35,end) 1s 1 normal both,
 	animated-cursor 600ms steps(29,end) infinite;
 	animation-duration: 6s;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
 }
 @keyframes animated-text{
 	from{width: 0;}
